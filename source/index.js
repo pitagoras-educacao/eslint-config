@@ -13,6 +13,7 @@ module.exports = {
         "@typescript-eslint/space-before-function-paren": ["error", "never"],
         "@typescript-eslint/explicit-function-return-type": "error",
         "@typescript-eslint/explicit-member-accessibility": "error",
-        "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }]
+        "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
+        "@typescript-eslint/quotes": ["error", "single"],
     }
 };
