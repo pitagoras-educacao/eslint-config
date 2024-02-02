@@ -3,6 +3,13 @@
   "version": "0.0.0",
   "main": "source/index.js",
   "author": "Letícia Aguiar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pitagoras-educacao/eslint-config"
+  },
+  "files": [
+    "./source"
+  ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
@@ -12,7 +19,8 @@
   "devDependencies": {
     "@commitlint/cli": "^18.6.0",
     "@commitlint/config-conventional": "^18.6.0",
-    "husky": "^9.0.10"
+    "husky": "^9.0.10",
+    "semantic-release": "^23.0.0"
   },
   "scripts": {
     "prepare": "husky"
