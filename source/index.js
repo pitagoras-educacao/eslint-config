@@ -17,22 +17,19 @@ module.exports = {
         "@typescript-eslint/quotes": ["error", "single"],
         "@typescript-eslint/naming-convention": [
             "error",
-            {
-                "selector": ["method"],
-                "format": ["camelCase"]
-            },
-            {
-                "selector": ["class", "enum", "interface", "typeAlias"],
-                "format": ["PascalCase"]
-            },
-            {
-                "selector": ["classPropery", "enumMember"],
-                "format": ["UPPER_CASE"]
-            },
-            {
-                "selector": ["varibleLike"],
-                "format": ["snake_case"]
-            }
+            { "selector": "class", "format": ["PascalCase"] },
+            { "selector": "classMethod", "format": ["camelCase"] },
+            { "selector": "classProperty", "format": ["camelCase", "UPPER_CASE"] },
+            
+            { "selector": "enum", "format": ["PascalCase"] },
+            { "selector": "enumMember", "format": ["UPPER_CASE"] },
+
+            { "selector": "interface", "format": ["PascalCase"] },
+            { "selector": "typeAlias", "format": ["PascalCase"] },
+
+
+            { "selector": "parameter", "format": ["snake_case"] },
+            { "selector": "variable", "format": ["snake_case"] },
         ],
         "@typescript-eslint/indent": ["error", "tab"],
     }
