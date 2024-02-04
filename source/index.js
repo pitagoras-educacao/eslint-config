@@ -33,6 +33,7 @@ module.exports = {
                 "selector": ["varibleLike"],
                 "format": ["snake_case"]
             }
-        ]
+        ],
+        "@typescript-eslint/indent": ["error", "tab"],
     }
 };
